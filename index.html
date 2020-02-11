@@ -6,11 +6,12 @@
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 <!-- Use it like any other HTML element -->
-<model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="A 3D model of an astronaut" ar ar-scale="auto" auto-rotate camera-controls
-style="width: 100%; height: 100%;">
-<div slot="ar-button">
-		<a id="default-ar-button" class="fab" tabindex="2" aria-label="View this 3D model up close">
-		<svg version="1.1" id="view_x5F_in_x5F_AR_x5F_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+			  ios-src="https://modelviewer.dev/shared-assets/Astronaut.usdz" alt="A 3D model of an astronaut" ar ar-scale="auto" camera-controls
+			  style="width: 100%; height: 100%;">
+		<a slot="ar-button" id="default-ar-button" class="fab" tabindex="2" aria-label="View this 3D model up close"
+		style="position: absolute; right: 0px; bottom: 0px;">
+		<svg version="1.1" id="view_x5F_in_x5F_AR_x5F_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
 		<rect id="Bounding_Box" x="0" y="0" fill="none" width="24" height="24"></rect>
 		<g id="Art_layer">
 			<path d="M3,4c0-0.55,0.45-1,1-1h2V1H4C2.35,1,1,2.35,1,4v2h2V4z"></path>
@@ -25,7 +26,6 @@ style="width: 100%; height: 100%;">
 		</g>
 		</svg>
 	</a>
-	</div>
 	
 	<!-- <div slot="ar-button"> -->
 		<!-- <a id="default-ar-button" class="fab" tabindex="2" aria-label="View this 3D model up close"> -->
